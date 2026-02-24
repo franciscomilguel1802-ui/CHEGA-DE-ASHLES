@@ -19585,32 +19585,6 @@ Data
     if loadtxt then
     loadtxt:Destroy()
     end
-    loadtxt = Instance.new("TextLabel",loadui)
-    loadtxt.BackgroundTransparency = 1
-    loadtxt.TextColor3 = Color3.new(1,1,1)
-    loadtxt.TextScaled = true
-    loadtxt.Size = UDim2.new(1,0,1,0)
-    loadtxt.Text = "loading"
-    debounce += 1
-    until debounce >= 50 or load.IsLoaded == true
-    if loadtxt then
-    loadtxt:Destroy()
-    end
-    if load.IsLoaded == false then
-    GUIObject.Screen.Enabled = false
-    local BREAKER = Instance.new("BoolValue")
-    BREAKER.Name = "RoClothesBreaker"
-    BREAKER.Parent = game.workspace
-    if oload.IsLoaded == true then
-    local txt = Instance.new("TextLabel",loadui)
-    txt.BackgroundTransparency = 1
-    txt.TextColor3 = Color3.new(1,1,1)
-    txt.TextScaled = true
-    txt.Size = UDim2.new(1,0,1,0)
-    txt.Text = "WRONG VERSION FILES ARE LOADED"
-    game:GetService("Debris"):AddItem(loadui,2)
-    warn("WRONG VERSION FILES ARE LOADED")
-    else
         local txt = Instance.new("TextLabel",loadui)
     txt.BackgroundTransparency = 1
     txt.TextColor3 = Color3.new(1,1,1)
